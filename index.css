@@ -1,6 +1,6 @@
 .picture {
   display: inline-block;
-  background-color: lightblue;
+  border: 2px solid gray;
   padding: 20px;
 }
 
@@ -9,11 +9,31 @@ path {
   fill: gray;
 }
 
- [data-pop="39776830"]{
-  fill: red;
-}
-
 path:hover {
   fill: pink;
   transition: fill 1s;
+}
+
+.six {
+  fill: #203032;
+}
+
+.five {
+  fill: #0c3f44;
+}
+
+.four {
+  fill: #136369;
+}
+
+.three {
+  fill: #56b9c0;
+}
+
+.two {
+  fill: #9fd8dd;
+}
+
+.one {
+  fill: #b3eaec;
 }

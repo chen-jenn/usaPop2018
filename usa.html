@@ -8,7 +8,9 @@
   <body>
     <h1 style='font-family:monospace;color:#1f1d2f;'>USA Population 2018</h1>
     <div class='picture'>
-    <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable_background="new 0 0 1000 604" height="604px" pretty_print="False" style="stroke-linejoin: round; stroke:#000; fill: none;" version="1.1" viewBox="0 0 1000 604" width="1000px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[path { fill-rule: evenodd; }]]></style></defs><metadata><views><view h="604.816027229" padding="0" w="100"><proj id="laea-usa" lat0="45" lon0="-100"/><bbox h="321.76" w="532.88" x="746.23" y="918.78"/></view></views></metadata><g class="" id="layer0">
+    <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+    <svg id="usa" enable_background="new 0 0 1000 604" height="604px" pretty_print="False" style="stroke-linejoin: round; stroke:#000; fill: none;" version="1.1" viewBox="0 0 1000 604" width="1000px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[path { fill-rule: evenodd; }]]></style></defs>
+      <metadata><views><view h="604.816027229" padding="0" w="100"><proj id="laea-usa" lat0="45" lon0="-100"/><bbox h="321.76" w="532.88" x="746.23" y="918.78"/></view></views></metadata><g class="" id="layer0">
       <path d="M625,251L623,248L621,246L594,250L578,251L568,252L551,252L551,253L552,254L555,260L556,260L558,263L558,265L559,265L561,267L567,269L567,271L566,271L564,276L567,279L569,283L570,284L573,284L573,285L575,325L576,334L576,345L590,344L601,344L645,340L659,338L660,340L661,340L661,342L656,350L669,348L669,346L671,345L668,343L671,341L670,341L671,340L671,338L671,336L670,336L672,335L672,336L672,336L673,336L673,336L673,333L676,334L677,332L676,330L677,325L677,324L676,325L672,324L672,322L669,318L670,317L668,309L665,308L665,307L661,305L660,306L659,304L654,301L651,299L651,296L652,291L653,289L653,287L654,284L647,282L646,284L644,283L643,280L643,279L642,276L640,274L636,271L633,269L630,266L629,264L628,263L628,262L627,259L626,252L627,251L625,251Z " data-key="MO" data-label="Missouri" data-pop="6135888"/>
       <path d="M403,58L384,56L371,55L355,54L329,51L314,49L295,46L269,42L245,37L235,35L230,59L232,64L233,66L234,71L232,72L234,73L235,76L238,77L238,79L240,81L241,84L242,86L242,89L246,91L246,93L250,94L248,99L245,108L246,111L244,112L243,113L242,116L245,121L247,119L249,119L253,117L253,118L254,120L254,124L255,127L258,133L257,136L259,139L260,139L262,140L263,148L265,150L266,148L272,148L273,149L275,147L277,148L282,148L282,149L284,148L287,149L288,146L290,145L292,149L295,152L296,140L310,142L311,142L346,146L362,147L394,150L410,151L410,151L411,129L412,113L413,100L414,83L415,58L403,58Z " data-key="MT" data-label="Montana" data-pop="1062330"/>
       <path d="M535,208L532,206L532,205L531,205L527,203L525,203L523,201L516,202L513,201L511,203L509,203L508,202L502,198L489,198L464,198L448,198L422,197L408,197L407,218L406,234L406,243L417,243L431,244L440,244L440,259L440,267L453,267L464,268L494,268L512,267L533,267L547,266L559,265L558,265L558,263L556,260L555,260L552,254L551,253L551,252L550,251L548,249L549,248L549,245L548,243L548,239L547,235L547,232L544,230L543,227L544,225L542,222L543,221L540,219L539,216L539,215L537,212L538,209L537,209L535,208Z " data-key="NE" data-label="Nebraska" data-pop="1932549"/>
@@ -62,5 +64,34 @@
       <path d="M686,369L679,370L660,373L661,375L660,376L658,377L657,381L656,382L656,387L653,388L653,390L652,390L652,393L650,394L651,395L651,396L649,396L648,398L649,399L648,400L649,402L647,402L646,405L647,407L646,407L648,410L647,411L649,415L649,419L648,420L647,422L650,422L649,424L649,426L651,427L649,428L651,430L650,432L653,433L653,435L654,435L653,436L653,438L650,440L652,440L650,444L647,447L646,454L644,455L644,461L642,461L643,463L643,464L644,466L643,467L681,463L680,467L679,468L679,471L681,474L683,475L685,480L687,481L688,481L692,478L697,475L702,475L706,474L709,473L709,473L703,439L703,414L702,396L702,370L701,369L700,368L686,369Z " data-key="MS" data-label="Mississippi" data-pop="2982785"/></g>
     </svg>
     </div>
+
+    <script>
+      const data = document.querySelectorAll('[data-pop]');
+      // const statePop = {};
+      //
+      // data.forEach(function(node){
+      //   statePop[node.dataset.key] = parseInt(node.dataset.pop);
+      // })
+
+      // To add density colours to the map 
+      data.forEach(function(node){
+        let pop = parseInt(node.dataset.pop)
+
+        if(pop > 20000000){
+          node.classList.add('six')
+        } else if (pop > 10000000){
+          node.classList.add('five')
+        } else if (pop > 6000000){
+          node.classList.add('four')
+        } else if (pop > 3000000) {
+          node.classList.add('three')
+        } else if (pop > 1000000) {
+          node.classList.add('two')
+        } else if (pop > 0) {
+          node.classList.add('one')
+        }
+      })
+
+    </script>
   </body>
 </html>
