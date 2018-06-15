@@ -73,7 +73,7 @@
       //   statePop[node.dataset.key] = parseInt(node.dataset.pop);
       // })
 
-      // To add density colours to the map 
+      // To add density colours to the map
       data.forEach(function(node){
         let pop = parseInt(node.dataset.pop)
 
@@ -90,6 +90,16 @@
         } else if (pop > 0) {
           node.classList.add('one')
         }
+      })
+
+      data.forEach(function(node){
+        node.addEventListener("mouseenter", function(){
+          console.log(node.dataset.label)
+        })
+
+        node.addEventListener('mouseleave', function(){
+          // node.style.display = 'none';
+        });
       })
 
     </script>

@@ -37,3 +37,10 @@ path:hover {
 .one {
   fill: #b3eaec;
 }
+
+.map-tooltip {
+  width:120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
