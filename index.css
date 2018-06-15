@@ -1,0 +1,19 @@
+.picture {
+  display: inline-block;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+path {
+  stroke: white;
+  fill: gray;
+}
+
+ [data-pop="39776830"]{
+  fill: red;
+}
+
+path:hover {
+  fill: pink;
+  transition: fill 1s;
+}
